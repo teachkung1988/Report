@@ -307,18 +307,18 @@
     <div class="module-card" style="border-left-color: #e67e22;">
         <div class="module-title">
             1. 語文理解 (VCI)
-            <span style="font-size:0.8rem; color:#e67e22;">滿分 80</span>
+            <span style="font-size:0.8rem; color:#e67e22;">滿分 40</span>
         </div>
         <div class="module-desc">
-            <strong>評分標準 (0-80)：</strong><br>
-            0-28: 表面特徵/錯誤 (反應期)<br>
-            29-63: 功能性描述/正確但具體 (功能期)<br>
-            64-80: 本質定義/後設認知 (抽象期)
+            <strong>評分標準 (0-40)：</strong><br>
+            0-14: 表面特徵/錯誤 (反應期)<br>
+            15-31: 功能性描述/正確但具體 (功能期)<br>
+            32-40: 本質定義/後設認知 (抽象期)
         </div>
         <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="vci-slider" oninput="updateScore('vci', this.value); saveToLocal();" style="background: linear-gradient(to right, #e67e22 0%, #e67e22 50%, #d3d3d3 50%);">
+            <input type="range" min="0" max="40" value="20" class="range-slider" id="vci-slider" oninput="updateScore('vci', this.value); saveToLocal();" style="background: linear-gradient(to right, #e67e22 0%, #e67e22 50%, #d3d3d3 50%);">
             <div class="score-display-area">
-                <span class="current-score" id="vci-val" style="color:#e67e22;">40</span>
+                <span class="current-score" id="vci-val" style="color:#e67e22;">20</span>
                 <span class="score-meaning level-mid" id="vci-meaning">功能期 (Functional)</span>
             </div>
         </div>
@@ -327,18 +327,18 @@
     <div class="module-card" style="border-left-color: #8e44ad;">
         <div class="module-title">
             2. 視覺空間 (VSI)
-            <span style="font-size:0.8rem; color:#8e44ad;">滿分 80</span>
+            <span style="font-size:0.8rem; color:#8e44ad;">滿分 40</span>
         </div>
         <div class="module-desc">
-            <strong>評分標準 (0-80)：</strong><br>
-            0-28: 依賴網格線索/無法轉換視角<br>
-            29-63: 需嘗試錯誤/具體操作方能解題<br>
-            64-80: 無線索完形/多角度心理旋轉
+            <strong>評分標準 (0-40)：</strong><br>
+            0-14: 依賴網格線索/無法轉換視角<br>
+            15-31: 需嘗試錯誤/具體操作方能解題<br>
+            32-40: 無線索完形/多角度心理旋轉
         </div>
         <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="vsi-slider" oninput="updateScore('vsi', this.value); saveToLocal();" style="background: linear-gradient(to right, #8e44ad 0%, #8e44ad 50%, #d3d3d3 50%);">
+            <input type="range" min="0" max="40" value="20" class="range-slider" id="vsi-slider" oninput="updateScore('vsi', this.value); saveToLocal();" style="background: linear-gradient(to right, #8e44ad 0%, #8e44ad 50%, #d3d3d3 50%);">
             <div class="score-display-area">
-                <span class="current-score" id="vsi-val" style="color:#8e44ad;">40</span>
+                <span class="current-score" id="vsi-val" style="color:#8e44ad;">20</span>
                 <span class="score-meaning level-mid" id="vsi-meaning">操作期 (Operational)</span>
             </div>
         </div>
@@ -346,27 +346,7 @@
 
     <div class="module-card" style="border-left-color: #2980b9;">
         <div class="module-title">
-            3. 工作記憶 (WMI)
-            <span style="font-size:0.8rem; color:#27ae60;">滿分 80</span>
-        </div>
-        <div class="module-desc">
-            <strong>評分標準 (0-80)：</strong><br>
-            0-28: 容量溢出/無法複述<br>
-            29-63: 分段執行/需輔助策略<br>
-            64-80: 內在操作/精確重組
-        </div>
-        <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="wmi-slider" oninput="updateScore('wmi', this.value); saveToLocal();" style="background: linear-gradient(to right, #27ae60 0%, #27ae60 50%, #d3d3d3 50%);">
-            <div class="score-display-area">
-                <span class="current-score" id="wmi-val" style="color:#27ae60;">40</span>
-                <span class="score-meaning level-mid" id="wmi-meaning">分段期 (Segmented)</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="module-card" style="border-left-color: #27ae60;">
-        <div class="module-title">
-            4. 流體推理 (FRI)
+            3. 流體推理 (FRI)
             <span style="font-size:0.8rem; color:#2980b9;">滿分 80</span>
         </div>
         <div class="module-desc">
@@ -376,7 +356,7 @@
             64-80: 多工平行處理/瞬間解題 (平行期)
         </div>
         <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();" style="background: linear-gradient(to右, #2980b9 0%, #2980b9 50%, #d3d3d3 50%);">
+            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();" style="background: linear-gradient(to right, #2980b9 0%, #2980b9 50%, #d3d3d3 50%);">
             <div class="score-display-area">
                 <span class="current-score" id="fri-val" style="color:#2980b9;">40</span>
                 <span class="score-meaning level-mid" id="fri-meaning">序列期 (Serial)</span>
@@ -384,21 +364,41 @@
         </div>
     </div>
 
+    <div class="module-card" style="border-left-color: #27ae60;">
+        <div class="module-title">
+            4. 工作記憶 (WMI)
+            <span style="font-size:0.8rem; color:#27ae60;">滿分 40</span>
+        </div>
+        <div class="module-desc">
+            <strong>評分標準 (0-40)：</strong><br>
+            0-14: 容量溢出/無法複述<br>
+            15-31: 分段執行/需輔助策略<br>
+            32-40: 內在操作/精確重組
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="40" value="20" class="range-slider" id="wmi-slider" oninput="updateScore('wmi', this.value); saveToLocal();" style="background: linear-gradient(to right, #27ae60 0%, #27ae60 50%, #d3d3d3 50%);">
+            <div class="score-display-area">
+                <span class="current-score" id="wmi-val" style="color:#27ae60;">20</span>
+                <span class="score-meaning level-mid" id="wmi-meaning">分段期 (Segmented)</span>
+            </div>
+        </div>
+    </div>
+
     <div class="module-card" style="border-left-color: #e74c3c;">
         <div class="module-title">
             5. 處理速度 (PSI)
-            <span style="font-size:0.8rem; color:#e74c3c;">滿分 50</span>
+            <span style="font-size:0.8rem; color:#e74c3c;">滿分 40</span>
         </div>
         <div class="module-desc">
-            <strong>評分標準 (0-50)：</strong><br>
-            0-17: 錯漏字多/動作遲緩 (焦慮期)<br>
-            18-39: 速度尚可/正確率佳 (標準期)<br>
-            40-50: 高速自動化掃描 (自動化)
+            <strong>評分標準 (0-40)：</strong><br>
+            0-14: 錯漏字多/動作遲緩 (焦慮期)<br>
+            15-31: 速度尚可/正確率佳 (標準期)<br>
+            32-40: 高速自動化掃描 (自動化)
         </div>
         <div class="slider-container">
-            <input type="range" min="0" max="50" value="25" class="range-slider" id="psi-slider" oninput="updateScore('psi', this.value); saveToLocal();" style="background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #d3d3d3 50%);">
+            <input type="range" min="0" max="40" value="20" class="range-slider" id="psi-slider" oninput="updateScore('psi', this.value); saveToLocal();" style="background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #d3d3d3 50%);">
             <div class="score-display-area">
-                <span class="current-score" id="psi-val" style="color:#e74c3c;">25</span>
+                <span class="current-score" id="psi-val" style="color:#e74c3c;">20</span>
                 <span class="score-meaning level-mid" id="psi-meaning">標準期 (Standard)</span>
             </div>
         </div>
@@ -423,8 +423,8 @@
         <div style="margin-bottom:30px; background:#f9f9f9; padding:15px; border-radius:8px;">
             <div class="stat-bar"><span class="stat-label">VCI 語文理解</span><div class="stat-track"><div class="stat-fill" id="bar-vci" style="width: 50%; background:#e67e22;"></div></div><span class="stat-val" id="text-vci">50%</span></div>
             <div class="stat-bar"><span class="stat-label">VSI 視覺空間</span><div class="stat-track"><div class="stat-fill" id="bar-vsi" style="width: 50%; background:#8e44ad;"></div></div><span class="stat-val" id="text-vsi">50%</span></div>
-            <div class="stat-bar"><span class="stat-label">WMI 工作記憶</span><div class="stat-track"><div class="stat-fill" id="bar-wmi" style="width: 50%; background:#27ae60;"></div></div><span class="stat-val" id="text-wmi">50%</span></div>
             <div class="stat-bar"><span class="stat-label">FRI 流體推理</span><div class="stat-track"><div class="stat-fill" id="bar-fri" style="width: 50%; background:#2980b9;"></div></div><span class="stat-val" id="text-fri">50%</span></div>
+            <div class="stat-bar"><span class="stat-label">WMI 工作記憶</span><div class="stat-track"><div class="stat-fill" id="bar-wmi" style="width: 50%; background:#27ae60;"></div></div><span class="stat-val" id="text-wmi">50%</span></div>
             <div class="stat-bar"><span class="stat-label">PSI 處理速度</span><div class="stat-track"><div class="stat-fill" id="bar-psi" style="width: 50%; background:#e74c3c;"></div></div><span class="stat-val" id="text-psi">50%</span></div>
             
             <div style="text-align:right; font-weight:bold; margin-top:10px;">總分：<span id="total-score">50%</span></div>
@@ -459,17 +459,18 @@
 <script>
     document.getElementById('report-date').innerText = new Date().toLocaleDateString('zh-TW', {year: 'numeric', month: 'long', day: 'numeric'});
 
+    // 核心修改：除 FRI 維持 80 外，其餘皆改為 40
     const MAX_SCORES = {
-        vci: 80, // Updated
-        vsi: 80, // Updated
+        vci: 40, 
+        vsi: 40, 
         fri: 80, 
-        wmi: 80, // Updated
-        psi: 50
+        wmi: 40, 
+        psi: 40
     };
 
     const PERCENT_HIGH = 0.8; // 80%
     const PERCENT_LOW = 0.35; // 35%
-    const STORAGE_KEY = 'gias_v3_data_updated'; // Changed key to avoid conflict with old data structure
+    const STORAGE_KEY = 'gias_v4_data_final'; // 更新 key 避免舊的 80 分資料干擾
 
     // --- LocalStorage Functions ---
     window.onload = function() {
@@ -495,21 +496,31 @@
 
     function loadFromLocal() {
         const savedData = localStorage.getItem(STORAGE_KEY);
+        // 設定預設值 (FRI為40, 其他為20)
+        const def = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 20 };
+
         if (savedData) {
             const data = JSON.parse(savedData);
             document.getElementById('studentName').value = data.name || '';
-            document.getElementById('vci-slider').value = data.vci || 40;
-            document.getElementById('vsi-slider').value = data.vsi || 40;
-            document.getElementById('fri-slider').value = data.fri || 40;
-            document.getElementById('wmi-slider').value = data.wmi || 40;
-            document.getElementById('psi-slider').value = data.psi || 25;
+            document.getElementById('vci-slider').value = data.vci || def.vci;
+            document.getElementById('vsi-slider').value = data.vsi || def.vsi;
+            document.getElementById('fri-slider').value = data.fri || def.fri;
+            document.getElementById('wmi-slider').value = data.wmi || def.wmi;
+            document.getElementById('psi-slider').value = data.psi || def.psi;
 
             // Trigger updates for UI colors and text
-            updateScore('vci', data.vci || 40);
-            updateScore('vsi', data.vsi || 40);
-            updateScore('fri', data.fri || 40);
-            updateScore('wmi', data.wmi || 40);
-            updateScore('psi', data.psi || 25);
+            updateScore('vci', data.vci || def.vci);
+            updateScore('vsi', data.vsi || def.vsi);
+            updateScore('fri', data.fri || def.fri);
+            updateScore('wmi', data.wmi || def.wmi);
+            updateScore('psi', data.psi || def.psi);
+        } else {
+            // 若無存檔，初始化預設值
+            updateScore('vci', def.vci);
+            updateScore('vsi', def.vsi);
+            updateScore('fri', def.fri);
+            updateScore('wmi', def.wmi);
+            updateScore('psi', def.psi);
         }
     }
 
@@ -518,8 +529,8 @@
             localStorage.removeItem(STORAGE_KEY);
             document.getElementById('studentName').value = '';
             
-            // Reset to defaults
-            const defaults = { vci: 40, vsi: 40, fri: 40, wmi: 40, psi: 25 };
+            // 重置預設值：滿分40的設為20，滿分80的設為40
+            const defaults = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 20 };
             
             document.getElementById('vci-slider').value = defaults.vci;
             document.getElementById('vsi-slider').value = defaults.vsi;
@@ -614,7 +625,9 @@
         let wmi = parseInt(document.getElementById('wmi-slider').value);
         let psi = parseInt(document.getElementById('psi-slider').value);
         let total = vci + vsi + fri + wmi + psi;
-        let totalMax = 370; // 80*4 + 50
+        
+        // 修正總分基數：40+40+80+40+40 = 240
+        let totalMax = 240; 
 
         // 計算各項百分比
         let p_vci = Math.round((vci / MAX_SCORES.vci) * 100);
