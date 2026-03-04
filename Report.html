@@ -344,29 +344,9 @@
         </div>
     </div>
 
-    <div class="module-card" style="border-left-color: #2980b9;">
-        <div class="module-title">
-            3. 流體推理 (FRI)
-            <span style="font-size:0.8rem; color:#2980b9;">滿分 80</span>
-        </div>
-        <div class="module-desc">
-            <strong>評分標準 (0-80)：</strong><br>
-            0-28: 僅單一維度/遺漏規則 (單維期)<br>
-            29-63: 需逐步推導/序列處理 (序列期)<br>
-            64-80: 多工平行處理/瞬間解題 (平行期)
-        </div>
-        <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();" style="background: linear-gradient(to right, #2980b9 0%, #2980b9 50%, #d3d3d3 50%);">
-            <div class="score-display-area">
-                <span class="current-score" id="fri-val" style="color:#2980b9;">40</span>
-                <span class="score-meaning level-mid" id="fri-meaning">序列期 (Serial)</span>
-            </div>
-        </div>
-    </div>
-
     <div class="module-card" style="border-left-color: #27ae60;">
         <div class="module-title">
-            4. 工作記憶 (WMI)
+            3. 工作記憶 (WMI)
             <span style="font-size:0.8rem; color:#27ae60;">滿分 40</span>
         </div>
         <div class="module-desc">
@@ -380,6 +360,26 @@
             <div class="score-display-area">
                 <span class="current-score" id="wmi-val" style="color:#27ae60;">20</span>
                 <span class="score-meaning level-mid" id="wmi-meaning">分段期 (Segmented)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-card" style="border-left-color: #2980b9;">
+        <div class="module-title">
+            4. 流體推理 (FRI)
+            <span style="font-size:0.8rem; color:#2980b9;">滿分 80</span>
+        </div>
+        <div class="module-desc">
+            <strong>評分標準 (0-80)：</strong><br>
+            0-28: 僅單一維度/遺漏規則 (單維期)<br>
+            29-63: 需逐步推導/序列處理 (序列期)<br>
+            64-80: 多工平行處理/瞬間解題 (平行期)
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();" style="background: linear-gradient(to right, #2980b9 0%, #2980b9 50%, #d3d3d3 50%);">
+            <div class="score-display-area">
+                <span class="current-score" id="fri-val" style="color:#2980b9;">40</span>
+                <span class="score-meaning level-mid" id="fri-meaning">序列期 (Serial)</span>
             </div>
         </div>
     </div>
