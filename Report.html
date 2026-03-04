@@ -387,18 +387,18 @@
     <div class="module-card" style="border-left-color: #e74c3c;">
         <div class="module-title">
             5. 處理速度 (PSI)
-            <span style="font-size:0.8rem; color:#e74c3c;">滿分 40</span>
+            <span style="font-size:0.8rem; color:#e74c3c;">滿分 50</span>
         </div>
         <div class="module-desc">
-            <strong>評分標準 (0-40)：</strong><br>
-            0-14: 錯漏字多/動作遲緩 (焦慮期)<br>
-            15-31: 速度尚可/正確率佳 (標準期)<br>
-            32-40: 高速自動化掃描 (自動化)
+            <strong>評分標準 (0-50)：</strong><br>
+            0-17: 錯漏字多/動作遲緩 (焦慮期)<br>
+            18-39: 速度尚可/正確率佳 (標準期)<br>
+            40-50: 高速自動化掃描 (自動化)
         </div>
         <div class="slider-container">
-            <input type="range" min="0" max="40" value="20" class="range-slider" id="psi-slider" oninput="updateScore('psi', this.value); saveToLocal();" style="background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #d3d3d3 50%);">
+            <input type="range" min="0" max="50" value="25" class="range-slider" id="psi-slider" oninput="updateScore('psi', this.value); saveToLocal();" style="background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #d3d3d3 50%);">
             <div class="score-display-area">
-                <span class="current-score" id="psi-val" style="color:#e74c3c;">20</span>
+                <span class="current-score" id="psi-val" style="color:#e74c3c;">25</span>
                 <span class="score-meaning level-mid" id="psi-meaning">標準期 (Standard)</span>
             </div>
         </div>
@@ -465,7 +465,7 @@
         vsi: 40, 
         fri: 80, 
         wmi: 40, 
-        psi: 40
+        psi: 50
     };
 
     const PERCENT_HIGH = 0.8; // 80%
@@ -496,8 +496,8 @@
 
     function loadFromLocal() {
         const savedData = localStorage.getItem(STORAGE_KEY);
-        // 設定預設值 (FRI為40, 其他為20)
-        const def = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 20 };
+        // 設定預設值 (FRI為40, 其他為一半：VCI/VSI/WMI=20, PSI=25)
+        const def = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 25 };
 
         if (savedData) {
             const data = JSON.parse(savedData);
@@ -529,8 +529,8 @@
             localStorage.removeItem(STORAGE_KEY);
             document.getElementById('studentName').value = '';
             
-            // 重置預設值：滿分40的設為20，滿分80的設為40
-            const defaults = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 20 };
+            // 重置預設值：滿分40的設為20，滿分80的設為40，PSI滿分50設為25
+            const defaults = { vci: 20, vsi: 20, fri: 40, wmi: 20, psi: 25 };
             
             document.getElementById('vci-slider').value = defaults.vci;
             document.getElementById('vsi-slider').value = defaults.vsi;
@@ -626,8 +626,8 @@
         let psi = parseInt(document.getElementById('psi-slider').value);
         let total = vci + vsi + fri + wmi + psi;
         
-        // 修正總分基數：40+40+80+40+40 = 240
-        let totalMax = 240; 
+        // 修正總分基數：40+40+80+40+50 = 250
+        let totalMax = 250; 
 
         // 計算各項百分比
         let p_vci = Math.round((vci / MAX_SCORES.vci) * 100);
