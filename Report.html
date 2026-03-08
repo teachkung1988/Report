@@ -289,26 +289,26 @@
         </div>
     </div>
 
-    <div class="module-card" style="border-left-color: #2980b9;">
-        <div class="module-title">3. 流體推理 (FRI) <span style="font-size:0.8rem; color:#2980b9;">滿分 80</span></div>
-        <div class="module-desc">0-28: 單維期 | 29-63: 序列期 | 64-80: 平行期</div>
-        <div class="slider-container">
-            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();">
-            <div class="score-display-area">
-                <span class="current-score" id="fri-val" style="color:#2980b9;">40</span>
-                <span class="score-meaning level-mid" id="fri-meaning">序列期</span>
-            </div>
-        </div>
-    </div>
-
     <div class="module-card" style="border-left-color: #27ae60;">
-        <div class="module-title">4. 工作記憶 (WMI) <span style="font-size:0.8rem; color:#27ae60;">滿分 40</span></div>
+        <div class="module-title">3. 工作記憶 (WMI) <span style="font-size:0.8rem; color:#27ae60;">滿分 40</span></div>
         <div class="module-desc">0-14: 溢出期 | 15-31: 分段期 | 32-40: 內化期</div>
         <div class="slider-container">
             <input type="range" min="0" max="40" value="20" class="range-slider" id="wmi-slider" oninput="updateScore('wmi', this.value); saveToLocal();">
             <div class="score-display-area">
                 <span class="current-score" id="wmi-val" style="color:#27ae60;">20</span>
                 <span class="score-meaning level-mid" id="wmi-meaning">分段期</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="module-card" style="border-left-color: #2980b9;">
+        <div class="module-title">4. 流體推理 (FRI) <span style="font-size:0.8rem; color:#2980b9;">滿分 80</span></div>
+        <div class="module-desc">0-28: 單維期 | 29-63: 序列期 | 64-80: 平行期</div>
+        <div class="slider-container">
+            <input type="range" min="0" max="80" value="40" class="range-slider" id="fri-slider" oninput="updateScore('fri', this.value); saveToLocal();">
+            <div class="score-display-area">
+                <span class="current-score" id="fri-val" style="color:#2980b9;">40</span>
+                <span class="score-meaning level-mid" id="fri-meaning">序列期</span>
             </div>
         </div>
     </div>
@@ -347,8 +347,8 @@
         <div style="margin-bottom:30px; background:#f9f9f9; padding:15px; border-radius:8px;">
             <div class="stat-bar"><span class="stat-label">VCI 語文理解</span><div class="stat-track"><div class="stat-fill" id="bar-vci" style="background:#e67e22;"></div></div><span class="stat-val" id="text-vci"></span></div>
             <div class="stat-bar"><span class="stat-label">VSI 視覺空間</span><div class="stat-track"><div class="stat-fill" id="bar-vsi" style="background:#8e44ad;"></div></div><span class="stat-val" id="text-vsi"></span></div>
-            <div class="stat-bar"><span class="stat-label">FRI 流體推理</span><div class="stat-track"><div class="stat-fill" id="bar-fri" style="background:#2980b9;"></div></div><span class="stat-val" id="text-fri"></span></div>
             <div class="stat-bar"><span class="stat-label">WMI 工作記憶</span><div class="stat-track"><div class="stat-fill" id="bar-wmi" style="background:#27ae60;"></div></div><span class="stat-val" id="text-wmi"></span></div>
+            <div class="stat-bar"><span class="stat-label">FRI 流體推理</span><div class="stat-track"><div class="stat-fill" id="bar-fri" style="background:#2980b9;"></div></div><span class="stat-val" id="text-fri"></span></div>
             <div class="stat-bar"><span class="stat-label">PSI 處理速度</span><div class="stat-track"><div class="stat-fill" id="bar-psi" style="background:#e74c3c;"></div></div><span class="stat-val" id="text-psi"></span></div>
             <div style="text-align:right; font-weight:bold; margin-top:10px;">總分百分比：<span id="total-score"></span></div>
         </div>
